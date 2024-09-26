@@ -1,0 +1,197 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\admin\\Downloads\\AssignmentCityTech\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{37ED4357-BA1A-48F9-9731-1A82A85DB68C}|AssignmentCityTech.csproj|c:\\users\\admin\\downloads\\assignmentcitytech\\views\\vendormaster\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{37ED4357-BA1A-48F9-9731-1A82A85DB68C}|AssignmentCityTech.csproj|solutionrelative:views\\vendormaster\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37ED4357-BA1A-48F9-9731-1A82A85DB68C}|AssignmentCityTech.csproj|c:\\users\\admin\\downloads\\assignmentcitytech\\controllers\\vendormastercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37ED4357-BA1A-48F9-9731-1A82A85DB68C}|AssignmentCityTech.csproj|solutionrelative:controllers\\vendormastercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37ED4357-BA1A-48F9-9731-1A82A85DB68C}|AssignmentCityTech.csproj|c:\\users\\admin\\downloads\\assignmentcitytech\\utility\\dataaccesslayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37ED4357-BA1A-48F9-9731-1A82A85DB68C}|AssignmentCityTech.csproj|solutionrelative:utility\\dataaccesslayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37ED4357-BA1A-48F9-9731-1A82A85DB68C}|AssignmentCityTech.csproj|c:\\users\\admin\\downloads\\assignmentcitytech\\models\\returnmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37ED4357-BA1A-48F9-9731-1A82A85DB68C}|AssignmentCityTech.csproj|solutionrelative:models\\returnmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37ED4357-BA1A-48F9-9731-1A82A85DB68C}|AssignmentCityTech.csproj|c:\\users\\admin\\downloads\\assignmentcitytech\\models\\vendormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37ED4357-BA1A-48F9-9731-1A82A85DB68C}|AssignmentCityTech.csproj|solutionrelative:models\\vendormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37ED4357-BA1A-48F9-9731-1A82A85DB68C}|AssignmentCityTech.csproj|c:\\users\\admin\\downloads\\assignmentcitytech\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{37ED4357-BA1A-48F9-9731-1A82A85DB68C}|AssignmentCityTech.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37ED4357-BA1A-48F9-9731-1A82A85DB68C}|AssignmentCityTech.csproj|c:\\users\\admin\\downloads\\assignmentcitytech\\utility\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37ED4357-BA1A-48F9-9731-1A82A85DB68C}|AssignmentCityTech.csproj|solutionrelative:utility\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37ED4357-BA1A-48F9-9731-1A82A85DB68C}|AssignmentCityTech.csproj|c:\\users\\admin\\downloads\\assignmentcitytech\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37ED4357-BA1A-48F9-9731-1A82A85DB68C}|AssignmentCityTech.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:11:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:12:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:21:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ReturnModel.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Downloads\\AssignmentCityTech\\Models\\ReturnModel.cs",
+              "RelativeDocumentMoniker": "Models\\ReturnModel.cs",
+              "ToolTip": "C:\\Users\\admin\\Downloads\\AssignmentCityTech\\Models\\ReturnModel.cs",
+              "RelativeToolTip": "Models\\ReturnModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T11:07:52.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DataAccessLayer.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Downloads\\AssignmentCityTech\\Utility\\DataAccessLayer.cs",
+              "RelativeDocumentMoniker": "Utility\\DataAccessLayer.cs",
+              "ToolTip": "C:\\Users\\admin\\Downloads\\AssignmentCityTech\\Utility\\DataAccessLayer.cs",
+              "RelativeToolTip": "Utility\\DataAccessLayer.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAE4AAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T19:04:21.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\Downloads\\AssignmentCityTech\\Views\\VendorMaster\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\VendorMaster\\Index.cshtml",
+              "ToolTip": "C:\\Users\\admin\\Downloads\\AssignmentCityTech\\Views\\VendorMaster\\Index.cshtml",
+              "RelativeToolTip": "Views\\VendorMaster\\Index.cshtml",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAwwFYAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-25T16:26:20.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "VendorModel.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Downloads\\AssignmentCityTech\\Models\\VendorModel.cs",
+              "RelativeDocumentMoniker": "Models\\VendorModel.cs",
+              "ToolTip": "C:\\Users\\admin\\Downloads\\AssignmentCityTech\\Models\\VendorModel.cs",
+              "RelativeToolTip": "Models\\VendorModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T19:11:15.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VendorMasterController.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Downloads\\AssignmentCityTech\\Controllers\\VendorMasterController.cs",
+              "RelativeDocumentMoniker": "Controllers\\VendorMasterController.cs",
+              "ToolTip": "C:\\Users\\admin\\Downloads\\AssignmentCityTech\\Controllers\\VendorMasterController.cs",
+              "RelativeToolTip": "Controllers\\VendorMasterController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T16:24:59.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\Downloads\\AssignmentCityTech\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\admin\\Downloads\\AssignmentCityTech\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-26T09:09:53.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DbContext.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Downloads\\AssignmentCityTech\\Utility\\DbContext.cs",
+              "RelativeDocumentMoniker": "Utility\\DbContext.cs",
+              "ToolTip": "C:\\Users\\admin\\Downloads\\AssignmentCityTech\\Utility\\DbContext.cs",
+              "RelativeToolTip": "Utility\\DbContext.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAawAYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T16:35:17.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Downloads\\AssignmentCityTech\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\admin\\Downloads\\AssignmentCityTech\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T15:22:05.655Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

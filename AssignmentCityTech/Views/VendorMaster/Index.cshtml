@@ -1,0 +1,329 @@
+﻿@model List<VendorModel>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title = "Vendor Master";
+}
+
+<div class="card">
+    <div class="card-body pt-3">
+        <div class="pull-right m-b-10">
+
+            <button class="btn myBtn btn-pill btn-primary" type="button" title="btn btn-pill btn-primary btn-air-primary" data-toggle="modal" data-original-title="test" data-target="#Modal1" onclick="refreshModal()">+ Add New</button>
+        </div>
+        <div class="clearfix"></div>
+        <div class="table-responsive">
+            <table class="display table-striped" id="basic-1">
+                <thead>
+                    <tr>
+
+                        <th>Vendor Name</th>
+                        <th>Vendor Code</th>
+                        <th>Address</th>
+
+                        <th style="text-align:center">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                    <tr>
+
+                        <td>@item.VendorName</td>
+                        <td>@item.VendorCode</td>
+                        <td>@item.Address</td>
+
+
+                        <td align="center"><button id="editButton" class="btn btn-success" type="button" title="btn btn-pill btn-primary btn-air-primary" data-bs-toggle="modal" data-original-title="test" data-bs-target="#Modal1" onclick='getDataById();'><i class="fa fa-edit"></i></button> <button class="btn btn-danger" type="button" title="btn btn-pill btn-primary btn-air-primary" onclick="deleteData();"><i class="fa fa-trash"></i></button></td>
+                    </tr>
+                    }
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h6 class="modal-title" id="exampleModalLabel">Add New Plant Wise Storage Location</h6>
+                <button class="btn-close" type="button" data-dismiss="modal" aria-label="Close">&close;</button>
+            </div>
+            <div class="modal-body modal-body-light">
+                <form>
+                    
+                    <div class="mb-1">
+                        <label class="col-form-label" for="recipient-name" style="color:red">* All fields are                           Mandatory</label>
+                    </div>
+                    <div class="mb-1">
+                        <input type="hidden" id="idEditPlantWiseStorageLocationID">
+                        <label class="col-form-label" for="recipient-name">Vendor Code :(<label                                             style="color:red">*</label>)</label>
+                        <select class="js-example-disabled-results col-sm-12" id="idPlantId">
+                            <option>Select</option>
+                        </select>
+                        <span id="error_PlantName" class="text-danger"></span>
+                    </div>
+                    <div>
+                        <label class="col-form-label" for="message-text">Vendor Name :(<label                                                style="color:red">*</label>)</label>
+                        <select class="js-example-disabled-results col-sm-12" id="idStorageLocationId">
+                            <option>Select</option>
+                        </select>
+                        <span id="error_StorageLocationCode" class="text-danger"></span>
+                    </div>
+                    <div>
+                        <label class="col-form-label" for="message-text">Address :(<label style="color:red">*</label>)</label>
+                        <input class="form-control" id="idGodownName" type="text">
+                        <span id="error_GodownName" class="text-danger"></span>
+                    </div>
+
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-light" type="button" data-dismiss="modal">Cancel</button>
+                <button class="btn btn-primary" id="savePlantWiseStorageLocation" type="button">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mouse0270-bootstrap-notify/3.1.5/bootstrap-notify.min.js"></script>
+
+
+<script>
+    $(document).ready(function () {
+    });
+    let table = new DataTable('#basic-1');
+    var validation = function () {
+        var isValid = true;
+        if ($('#idPlantId').val() == '') {
+            $('#error_PlantName').text('Plant Name Not Selected.');
+            isValid = false;
+        }
+        else {
+            $('#error_PlantName').text('');
+        }
+        if ($('#idStorageLocationId').val() == '') {
+            $('#error_StorageLocationCode').text('Storage Location Code Not Selected.');
+            isValid = false;
+        }
+        else {
+            $('#error_StorageLocationCode').text('');
+        }
+        if ($('#idGodownName').val().trim() == '') {
+            $('#error_GodownName').text('Godown Name is required.');
+            isValid = false;
+        }
+        else {
+            $('#error_GodownName').text('');
+        }
+        return isValid;
+    }
+
+    var successClick = function (notMsg) {
+        $.notify({
+            // options
+            title: '<strong>Success</strong>',
+            message: notMsg,
+            icon: 'glyphicon glyphicon-ok',
+            target: '_blank'
+        }, {
+            // settings
+            element: 'body',
+            //position: null,
+            type: "success",
+            //allow_dismiss: true,
+            //newest_on_top: false,
+            showProgressbar: false,
+            placement: {
+                from: "top",
+                align: "right"
+            },
+            offset: 20,
+            spacing: 10,
+            z_index: 1031,
+            delay: 3300,
+            timer: 1000,
+            url_target: '_blank',
+            mouse_over: null,
+            animate: {
+                enter: 'animated fadeInDown',
+                exit: 'animated fadeOutRight'
+            },
+            onShow: null,
+            onShown: null,
+            onClose: null,
+            onClosed: null,
+            icon_type: 'class',
+        });
+    }
+
+    var warningClick = function (msg) {
+        $.notify({
+            // options
+            title: '<strong>Warning</strong>',
+            message: msg,
+            icon: 'glyphicon glyphicon-warning-sign',
+        }, {
+            // settings
+            element: 'body',
+            position: null,
+            type: "warning",
+            allow_dismiss: true,
+            newest_on_top: false,
+            showProgressbar: false,
+            placement: {
+                from: "top",
+                align: "right"
+            },
+            offset: 20,
+            spacing: 10,
+            z_index: 1031,
+            delay: 3300,
+            timer: 1000,
+            url_target: '_blank',
+            mouse_over: null,
+            animate: {
+                enter: 'animated bounceIn',
+                exit: 'animated bounceOut'
+            },
+            onShow: null,
+            onShown: null,
+            onClose: null,
+            onClosed: null,
+            icon_type: 'class',
+        });
+    }
+
+    var dangerClick = function (dangermsg) {
+        $.notify({
+            // options
+            title: '<strong>Danger</strong>',
+            message: dangermsg,
+            icon: 'glyphicon glyphicon-remove-sign',
+        }, {
+            // settings
+            element: 'body',
+            position: null,
+            type: "danger",
+            allow_dismiss: true,
+            newest_on_top: false,
+            showProgressbar: false,
+            placement: {
+                from: "top",
+                align: "right"
+            },
+            offset: 20,
+            spacing: 10,
+            z_index: 1031,
+            delay: 3300,
+            timer: 1000,
+            url_target: '_blank',
+            mouse_over: null,
+            animate: {
+                enter: 'animated flipInY',
+                exit: 'animated flipOutX'
+            },
+            onShow: null,
+            onShown: null,
+            onClose: null,
+            onClosed: null,
+            icon_type: 'class',
+        });
+    }
+
+    var refreshModal = function () {
+        $('#exampleModalLabel').html("Add New Ven");
+        $('#idEditPlantWiseStorageLocationID').val('');
+        $('#idGodownName').val('');
+        $('#error_StorageLocationCode').text('');
+        $('#error_PlantName').text('');
+        $('#error_GodownName').text('');
+    }
+
+    function GetStorageLocationlist(storageLocationId) {
+        $.ajax({
+            url: BaseUrl + "/PlantWiseStorageLocation/GetStorageLocationList",
+            type: "GET",
+            dataType: "json",
+            success: function (result) {
+                $('#idStorageLocationId')
+                    .empty()
+                    .append('<option selected="selected" value="">-- Select --</option>');
+                //debugger;
+                $.each(result, function (index, value) {
+                    // APPEND OR INSERT DATA TO SELECT ELEMENT.
+                    $('#idStorageLocationId').append(
+                        '<option value="' +
+                        value.StorageLocationID +
+                        '">' +
+                        value.StorageLocationCode +
+                        "</option>"
+                    );
+                });
+                if (storageLocationId > 0) {
+                    $(
+                        "#idStorageLocationId option[value='" + storageLocationId + "']"
+                    )[0].selected = true;
+                }
+            },
+            error: function (jqxhr, settings, thrownError) {
+                alert(jqxhr.status + '\n' + thrownError);
+            }
+        });
+    }
+
+    function SavePlantWiseStorageLocation(plantWiseStorageLocationId, storageLocationId, plantId, StorageLocationCode, StorageLocationName) {
+        var isValid = validation();
+        if (isValid == false) {
+            return warningClick("Please fill all data");
+        }
+        else {
+            var Form_Data = new FormData();
+            Form_Data.append("PlantWiseStorageLocationID", plantWiseStorageLocationId);
+            Form_Data.append("StorageLocationID", storageLocationId);
+            Form_Data.append("PlantID", plantId);
+            Form_Data.append("GodownName", StorageLocationName);
+            $.ajax({
+                url: "Index",
+                contentType: false,
+                processData: false,
+                data: Form_Data,
+                type: 'POST',
+                dataType: 'json',
+                cache: false,
+                success: function (result) {
+                    if (result.statusCode == "400") {
+                        //toastr.error(result.message, {
+                        //    "onclick": null,
+                        //    "fadeIn": 300,
+                        //    "fadeOut": 100,
+                        //    "timeOut": 5000,
+                        //    "extendedTimeOut": 1000
+                        //});
+
+                        return
+                    }
+                    if (result == false) {
+                        dangerClick("Not Added Successfully.");
+
+                        return
+                    }
+                    if (result == true) {
+                        $('#Modal1').modal('hide');
+                        window.location.href = BaseUrl + '/PlantWiseStorageLocation/Index';
+                        successClick("Added Successfully.");
+
+                    }
+                },
+                error: function (jqxhr, settings, thrownError) {
+                    alert(jqxhr.status + '\n' + thrownError);
+                }
+            });
+        }
+    }
+
+</script>
